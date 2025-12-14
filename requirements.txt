@@ -1,18 +1,19 @@
 # SphereRyder Password Manager - Python Dependencies
 # Install with: pip install -r requirements.txt
+# Compatible with Python 3.14
 
 # Core cryptography libraries
-cryptography==42.0.0          # AES-256-GCM encryption and PBKDF2 key derivation
-bcrypt==4.1.2                 # Password hashing
+cryptography>=42.0.0          # AES-256-GCM encryption and PBKDF2 key derivation
+bcrypt>=4.1.2                 # Password hashing
 
 # Streamlit for web UI
-streamlit==1.29.0             # Web-based user interface
-pandas==2.1.4                 # Data manipulation for Streamlit tables
+streamlit>=1.29.0             # Web-based user interface
+pandas>=2.2.0                 # Data manipulation for Streamlit tables (updated for Python 3.14)
 
 # Jupyter notebook support
-jupyter==1.0.0                # Jupyter notebook environment
-notebook==7.0.6               # Jupyter notebook interface
-ipykernel==6.27.1             # IPython kernel for Jupyter
+jupyter>=1.0.0                # Jupyter notebook environment
+notebook>=7.0.6               # Jupyter notebook interface
+ipykernel>=6.27.1             # IPython kernel for Jupyter
 
 # Additional utilities
-python-dotenv==1.0.0          # Environment variable management (optional)
+python-dotenv>=1.0.0          # Environment variable management (optional)
