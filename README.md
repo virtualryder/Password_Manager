@@ -4,6 +4,8 @@
 
 A comprehensive, production-ready password manager built with Python, featuring end-to-end encryption, multi-user support, and both CLI and web-based interfaces.
 
+✨ **Now fully compatible with Python 3.14!**
+
 ---
 
 ## 📋 Table of Contents
@@ -78,7 +80,7 @@ User Master Password
 
 ### Prerequisites
 
-- **Python 3.8 or higher**
+- **Python 3.8 or higher** (tested and fully compatible with Python 3.14)
 - **pip** (Python package manager)
 - **Git** (for version control)
 
@@ -117,8 +119,10 @@ pip install -r requirements.txt
 
 **Expected output:**
 ```
-Successfully installed bcrypt-4.1.2 cryptography-42.0.0 streamlit-1.29.0 ...
+Successfully installed bcrypt-5.0.0 cryptography-46.0.3 streamlit-1.52.1 pandas-2.3.3 ...
 ```
+
+**Note:** Package versions may vary as the requirements.txt uses flexible version constraints (>=) to ensure compatibility with newer Python versions including Python 3.14.
 
 ---
 
@@ -494,6 +498,16 @@ pip install streamlit==1.29.0
 - You need both the master password AND the salt (stored in users.json)
 - Always backup the entire `data/` directory
 
+#### Issue 6: Package installation fails with Python 3.14
+**Solution:**
+- The project has been updated to support Python 3.14
+- Ensure you're using the latest requirements.txt from the repository
+- If you have an older version, update pandas to >=2.2.0:
+  ```bash
+  pip install "pandas>=2.2.0"
+  ```
+- For compilation errors with pandas 2.1.4 or older, upgrade to pandas 2.2.0 or higher
+
 ---
 
 ## 📄 License
@@ -526,7 +540,13 @@ For issues or questions:
 
 ## 🔄 Version History
 
-### Version 1.0.0 (Current)
+### Version 1.0.1 (Current)
+- **Python 3.14 compatibility** - Updated package dependencies
+- Updated requirements.txt to use flexible version constraints (>=)
+- Upgraded pandas from 2.1.4 to >=2.2.0 for Python 3.14 support
+- All features tested and verified on Python 3.14.0
+
+### Version 1.0.0
 - Initial release
 - AES-256-GCM encryption
 - PBKDF2 key derivation (480,000 iterations)
