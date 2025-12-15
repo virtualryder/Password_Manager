@@ -587,5 +587,6 @@ This password manager is designed for educational purposes and internal use. For
 **Built with ❤️ by SphereRyder Security Services**
 
 *Protecting Your Digital Identity*
-#   P a s s w o r d _ M a n a g e r  
+#   P a s s w o r d _ M a n a g e r 
+ 
  
